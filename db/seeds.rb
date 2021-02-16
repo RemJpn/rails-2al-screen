@@ -48,7 +48,7 @@ so_british = Show.new(
 so_british.category = comedy
 so_british.artist = paul_taylor
 so_british.thumbnail.attach(io: File.open('app/assets/images/so_british.png'), filename: 'so_british_photo.png', content_type: 'image/png')
-# so_british.wide_poster.attach(io: File.open('app/assets/images/so_british_wide.png'), filename: 'so_british_wide_photo.png', content_type: 'image/png')
+so_british.wide_poster.attach(io: File.open('app/assets/images/so_british_wide.png'), filename: 'so_british_wide_photo.png', content_type: 'image/png')
 so_british.save!
 
 andromaque = Show.new(
@@ -60,8 +60,8 @@ andromaque = Show.new(
 )
 andromaque.category = theater
 andromaque.artist = jean_racine
-# andromaque.thumbnail.attach(io: File.open('app/assets/images/andromaque.png'), filename: 'andromaque_photo.png', content_type: 'image/png')
-# andromaque.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+andromaque.thumbnail.attach(io: File.open('app/assets/images/andromaque.png'), filename: 'andromaque_photo.png', content_type: 'image/png')
+andromaque.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
 andromaque.save!
 
 

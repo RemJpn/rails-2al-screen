@@ -1,2 +1,9 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<% @categories.each do |category| %>
+  <%= category.name %>
+  <% category.shows.each do |show|  %>
+    <%= cl_image_tag show.thumbnail.key, height: 440 %>
+  <% end %>
+<% end %>

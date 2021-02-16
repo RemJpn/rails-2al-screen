@@ -4,5 +4,5 @@ class Show < ApplicationRecord
   has_many :bookings
 
   has_one_attached :thumbnail
-  # has_one_attached :wide_poster
+  has_one_attached :wide_poster
 end
