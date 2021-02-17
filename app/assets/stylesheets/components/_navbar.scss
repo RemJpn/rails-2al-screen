@@ -12,19 +12,27 @@
   font-size: 23px;
   font-weight: bold;
   align-items: center;
+  margin-right: 10%;
 }
 
-
-.navbar-nav {
-  margin-left: 90px;
-}
 
 .nav-item {
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
 
+
   .nav-link {
     color: $red;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0, 1) 0s;
+
+    &:hover {
+      color: $yellow;
+    }
+
   }
+}
+
+.active .nav-link{
+  color: $yellow;
 }
