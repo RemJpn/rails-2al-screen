@@ -1,9 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render 'shared/sliding_menu' %>
 
-<% @categories.each do |category| %>
-  <%= category.name %>
-  <% category.shows.each do |show|  %>
-    <%= cl_image_tag show.thumbnail.key, height: 440 %>
+<div class="home-container">
+  <% @categories.each do |category| %>
+    <% next if category.shows.empty? %>
+    <div class="category-name">
+      <%= category.name %>
+    </div>
+    <div class="category-shows">
+      <% category.shows.each do |show|  %>
+        <%= cl_image_tag show.thumbnail.key, height: 440, class: 'show-thumbnail' %>
+      <% end %>
+    </div>
   <% end %>
-<% end %>
+</div>

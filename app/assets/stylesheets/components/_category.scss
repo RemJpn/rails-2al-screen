@@ -1,0 +1,18 @@
+.category-name {
+  font-size: 20px;
+  color: $red;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 44px 0 20px 0;
+}
+
+.category-shows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-thumbnail {
+  width: 300px;
+  flex-shrink: 1;
+}
