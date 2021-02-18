@@ -45,6 +45,7 @@ so_british = Show.new(
   date: "15/11/2020",
   time: "20:00",
   price: 8,
+  style: "Humour - StandUp"
 )
 so_british.category = comedy
 so_british.artist = paul_taylor
@@ -59,6 +60,7 @@ prem_consultation = Show.new(
   date: "15/11/2020",
   time: "20:00",
   price: 8,
+  style: "Humour - StandUp"
 )
 prem_consultation.category = comedy
 prem_consultation.artist = issa_doumbia
@@ -73,6 +75,7 @@ diable_gentille_fille = Show.new(
   date: "15/11/2020",
   time: "20:00",
   price: 8,
+  style: "Humour - StandUp"
 )
 diable_gentille_fille.category = comedy
 diable_gentille_fille.artist = laura_laune
@@ -87,6 +90,7 @@ ben = Show.new(
   date: "15/11/2020",
   time: "20:00",
   price: 8,
+  style: "Humour - StandUp"
 )
 ben.category = comedy
 ben.artist = ben_artist
@@ -101,6 +105,7 @@ syndrome_playmobil = Show.new(
   date: "15/11/2020",
   time: "20:00",
   price: 8,
+  style: "Humour - StandUp"
 )
 syndrome_playmobil.category = comedy
 syndrome_playmobil.artist = elodie_poux
@@ -115,6 +120,7 @@ andromaque = Show.new(
   date: "20/10/2020",
   time: "20:00",
   price: 8,
+  style: "Classique - Tragédie \n Tout Public"
 )
 andromaque.category = theater
 andromaque.artist = jean_racine
