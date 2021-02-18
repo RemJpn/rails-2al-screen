@@ -10,9 +10,7 @@
 .category-shows {
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap;
 }
 
-.show-thumbnail {
-  width: 300px;
-  flex-shrink: 1;
-}
+

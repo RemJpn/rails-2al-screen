@@ -8,7 +8,14 @@
     </div>
     <div class="category-shows">
       <% category.shows.each do |show|  %>
-        <%= cl_image_tag show.thumbnail.key, height: 440, class: 'show-thumbnail' %>
+        <div class="show-thumbnail" style="background-image: url('<%= cl_image_path show.thumbnail.key %>')">
+          <div class="thumbnail-hover">
+            <%= image_tag 'play.svg', class: "thumbnail-play" %>
+            <div class="thumbnail-title"><%= show.name %></div >
+            <div class="thumbnail-artist"><%= show.artist.name %></div>
+            <div class="thumbnail-style"><%= show.category.name %></div>
+          </div>
+        </div>
       <% end %>
     </div>
   <% end %>
