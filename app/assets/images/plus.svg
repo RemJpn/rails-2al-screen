@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.5" height="16.5" viewBox="0 0 16.5 16.5">
+  <defs>
+    <filter id="Color_Overlay" x="0" y="0" width="16.5" height="16.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="-0.5" dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon" transform="translate(0.876 0.159)">
+    <g transform="matrix(1, 0, 0, 1, -0.88, -0.16)" filter="url(#Color_Overlay)">
+      <path id="Color_Overlay-2" data-name="Color Overlay" d="M9.375,15V9.375H15V15ZM0,15V9.375H5.625V15ZM9.375,5.625V0H15V5.625ZM0,5.625V0H5.625V5.625Z" transform="translate(1.25 0.25)" fill="#ea5451"/>
+    </g>
+  </g>
+</svg>

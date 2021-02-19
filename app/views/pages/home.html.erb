@@ -1,6 +1,22 @@
 <%= render 'shared/sliding_menu' %>
 
+
 <div class="home-container">
+  <div class="featured">
+    <div class="featured-left">
+      <div class="featured-nav">
+        <button class="featured-item featured-item-active">01</button>
+        <button class="featured-item">02</button>
+        <button class="featured-item">03</button>
+      </div>
+      <div class="featured-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <button class="featured-discover">Découvrir</button>
+    </div>
+    <%= image_tag "2al-banner.png", class: "featured-img" %>
+  </div>
+
   <% @categories.each do |category| %>
     <% next if category.shows.empty? %>
     <div class="category-name">
@@ -19,4 +35,6 @@
       <% end %>
     </div>
   <% end %>
+  <div class="category-name">Plus de catégories</div>
+  <%= image_tag "plus.svg", class: "more-categories" %>
 </div>
