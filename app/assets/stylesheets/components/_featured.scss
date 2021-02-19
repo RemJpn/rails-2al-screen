@@ -51,4 +51,9 @@
   text-transform: uppercase;
   width: fit-content;
   padding: 14px 28px;
+
+  &:hover {
+    color: white;
+    background-color: $red;
+  }
 }
