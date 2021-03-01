@@ -5,16 +5,24 @@
   <div class="featured">
     <div class="featured-left">
       <div class="featured-nav">
-        <button class="featured-item featured-item-active">01</button>
-        <button class="featured-item">02</button>
-        <button class="featured-item">03</button>
+        <button class="featured-item featured-item-active" data-featured="01">01</button>
+        <button class="featured-item" data-featured="02">02</button>
+        <button class="featured-item" data-featured="03">03</button>
       </div>
-      <div class="featured-description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <div class="featured-description featured-active" data-featured="01">
+        Lorem 1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="featured-description" data-featured="02">
+        Lorem 2 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="featured-description" data-featured="03">
+        Lorem 3 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </div>
       <button class="featured-discover">Découvrir</button>
     </div>
-    <%= image_tag "2al-banner.png", class: "featured-img" %>
+    <%= image_tag "2al-banner.png", class: "featured-img featured-active", "data-featured" => "01" %>
+    <%= image_tag "featured_img_02.png", class: "featured-img", "data-featured" => "02" %>
+    <%= image_tag "featured_img_03.png", class: "featured-img", "data-featured" => "03" %>
   </div>
 
   <% @categories.each do |category| %>
@@ -23,7 +31,7 @@
       <%= category.name %>
     </div>
     <div class="category-shows">
-      <% category.shows.each do |show|  %>
+      <% category.shows.first(5).each do |show|  %>
         <div class="show-thumbnail" style="background-image: url('<%= cl_image_path show.thumbnail.key %>')">
           <div class="thumbnail-hover">
             <%= image_tag 'play.svg', class: "thumbnail-play" %>

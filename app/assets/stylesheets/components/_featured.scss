@@ -12,6 +12,7 @@
 
 .featured-img {
   width: 60%;
+  display:none;
 }
 
 .featured-nav {
@@ -20,6 +21,7 @@
 
 .featured-description {
   margin-top: 90px;
+  display: none;
 }
 
 .featured-item {
@@ -37,6 +39,10 @@
   border-radius: 50%;
   background-color: $yellow;
   color: white;
+}
+
+.featured-active {
+  display: block;
 }
 
 .featured-discover {
