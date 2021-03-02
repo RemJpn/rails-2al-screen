@@ -34,6 +34,8 @@ elodie_poux = Artist.create!(name: "Elodie POUX")
 ben_artist = Artist.create!(name: "BEN")
 jean_racine = Artist.create!(name: "Jean RACINE")
 
+myband = Artist.create!(name: "My Band")
+
 
 
 #--------------------------------------------------------
@@ -114,6 +116,8 @@ syndrome_playmobil.thumbnail.attach(io: File.open('app/assets/images/syndrome_pl
 syndrome_playmobil.save!
 
 
+# Theatre
+
 andromaque = Show.new(
   name: "Andromaque",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
@@ -127,6 +131,144 @@ andromaque.artist = jean_racine
 andromaque.thumbnail.attach(io: File.open('app/assets/images/andromaque.png'), filename: 'andromaque_photo.png', content_type: 'image/png')
 andromaque.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
 andromaque.save!
+
+
+theatre2 = Show.new(
+  name: "Theatre 2",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Classique - Tragédie \n Tout Public"
+)
+theatre2.category = theater
+theatre2.artist = jean_racine
+theatre2.thumbnail.attach(io: File.open('app/assets/images/theatre_2.png'), filename: 'theatre_2.png', content_type: 'image/png')
+theatre2.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+theatre2.save!
+
+
+theatre3 = Show.new(
+  name: "Theatre 3",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Classique - Tragédie \n Tout Public"
+)
+theatre3.category = theater
+theatre3.artist = jean_racine
+theatre3.thumbnail.attach(io: File.open('app/assets/images/theatre_3.png'), filename: 'theatre_3.png', content_type: 'image/png')
+theatre3.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+theatre3.save!
+
+
+theatre4 = Show.new(
+  name: "Theatre 4",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Classique - Tragédie \n Tout Public"
+)
+theatre4.category = theater
+theatre4.artist = jean_racine
+theatre4.thumbnail.attach(io: File.open('app/assets/images/theatre_4.png'), filename: 'theatre_4.png', content_type: 'image/png')
+theatre4.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+theatre4.save!
+
+
+theatre5 = Show.new(
+  name: "Theatre 5",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Classique - Tragédie \n Tout Public"
+)
+theatre5.category = theater
+theatre5.artist = jean_racine
+theatre5.thumbnail.attach(io: File.open('app/assets/images/theatre_5.png'), filename: 'theatre_5.png', content_type: 'image/png')
+theatre5.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+theatre5.save!
+
+
+# Concerts
+
+concert1 = Show.new(
+  name: "concert1",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Post grunge"
+)
+concert1.category = concert
+concert1.artist = myband
+concert1.thumbnail.attach(io: File.open('app/assets/images/concert1.png'), filename: 'concert1.png', content_type: 'image/png')
+concert1.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+concert1.save!
+
+
+concert2 = Show.new(
+  name: "concert2",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Post grunge"
+)
+concert2.category = concert
+concert2.artist = myband
+concert2.thumbnail.attach(io: File.open('app/assets/images/concert2.png'), filename: 'concert2.png', content_type: 'image/png')
+concert2.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+concert2.save!
+
+
+concert3 = Show.new(
+  name: "concert3",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Post grunge"
+)
+concert3.category = concert
+concert3.artist = myband
+concert3.thumbnail.attach(io: File.open('app/assets/images/concert3.png'), filename: 'concert3.png', content_type: 'image/png')
+concert3.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+concert3.save!
+
+
+concert4 = Show.new(
+  name: "concert4",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Post grunge"
+)
+concert4.category = concert
+concert4.artist = myband
+concert4.thumbnail.attach(io: File.open('app/assets/images/concert4.png'), filename: 'concert4.png', content_type: 'image/png')
+concert4.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+concert4.save!
+
+
+concert5 = Show.new(
+  name: "concert5",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
+  date: "20/10/2020",
+  time: "20:00",
+  price: 8,
+  style: "Post grunge"
+)
+concert5.category = concert
+concert5.artist = myband
+concert5.thumbnail.attach(io: File.open('app/assets/images/concert5.png'), filename: 'concert5.png', content_type: 'image/png')
+concert5.wide_poster.attach(io: File.open('app/assets/images/andromaque_wide.png'), filename: 'andromaque_wide_photo.png', content_type: 'image/png')
+concert5.save!
+
 
 
 
