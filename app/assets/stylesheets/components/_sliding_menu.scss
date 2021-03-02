@@ -35,6 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .fa-bars {
   font-size: 40px;
@@ -81,6 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor:pointer;
 
   button {
     transform: rotate(90deg);
