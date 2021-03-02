@@ -1,3 +1,44 @@
 <div class="sliding-menu">
-  <i class="fas fa-bars"></i>
+  <div class="sliding-menu-open">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="sliding-menu-main">
+    <div class="sliding-menu-title">
+      <%= image_tag "logo.svg" %>
+      <h3>menu</h3>
+    </div>
+    <div class="sliding-menu-close">
+      <button>X</button>
+    </div>
+    <div class="sliding-menu-options">
+      <div class="sliding-menu-top">
+        <div>fr/en</div>
+      </div>
+      <div class="sliding-menu-list">
+        <ul>
+          <li><%= link_to "accueil", '#' %></li>
+          <li><%= link_to "billeterie", '#' %></li>
+          <li><%= link_to "calendrier", '#' %></li>
+          <li><%= link_to "connexion", '#' %></li>
+        </ul>
+      </div>
+      <div class="sliding-menu-bottom">
+        <div class="sliding-menu-sns">
+          <%= link_to "#" do %>
+            <i class="fab fa-facebook"></i>
+          <% end %>
+          <%= link_to "#" do %>
+            <i class="fab fa-instagram"></i>
+          <% end %>
+          <%= link_to "#" do %>
+            <i class="fab fa-youtube"></i>
+          <% end %>
+        </div>
+        <div>
+          <%= link_to "nous soutenir", "#" %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
