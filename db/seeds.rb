@@ -67,7 +67,7 @@ prem_consultation = Show.new(
 prem_consultation.category = comedy
 prem_consultation.artist = issa_doumbia
 prem_consultation.thumbnail.attach(io: File.open('app/assets/images/prem_consultation.png'), filename: 'prem_consultation_photo.png', content_type: 'image/png')
-# prem_consultation.wide_poster.attach(io: File.open('app/assets/images/prem_consultation_wide.png'), filename: 'prem_consultation_wide_photo.png', content_type: 'image/png')
+prem_consultation.wide_poster.attach(io: File.open('app/assets/images/so_british_wide.png'), filename: 'so_british_wide_photo.png', content_type: 'image/png')
 prem_consultation.save!
 
 
@@ -82,7 +82,7 @@ diable_gentille_fille = Show.new(
 diable_gentille_fille.category = comedy
 diable_gentille_fille.artist = laura_laune
 diable_gentille_fille.thumbnail.attach(io: File.open('app/assets/images/diable_gentille_fille.png'), filename: 'diable_gentille_fille_photo.png', content_type: 'image/png')
-# diable_gentille_fille.wide_poster.attach(io: File.open('app/assets/images/diable_gentille_fille_wide.png'), filename: 'diable_gentille_fille_wide_photo.png', content_type: 'image/png')
+diable_gentille_fille.wide_poster.attach(io: File.open('app/assets/images/so_british_wide.png'), filename: 'so_british_wide_photo.png', content_type: 'image/png')
 diable_gentille_fille.save!
 
 
@@ -97,7 +97,7 @@ ben = Show.new(
 ben.category = comedy
 ben.artist = ben_artist
 ben.thumbnail.attach(io: File.open('app/assets/images/ben.png'), filename: 'ben_photo.png', content_type: 'image/png')
-# ben.wide_poster.attach(io: File.open('app/assets/images/ben_wide.png'), filename: 'ben_wide_photo.png', content_type: 'image/png')
+ben.wide_poster.attach(io: File.open('app/assets/images/so_british_wide.png'), filename: 'so_british_wide_photo.png', content_type: 'image/png')
 ben.save!
 
 
@@ -112,7 +112,7 @@ syndrome_playmobil = Show.new(
 syndrome_playmobil.category = comedy
 syndrome_playmobil.artist = elodie_poux
 syndrome_playmobil.thumbnail.attach(io: File.open('app/assets/images/syndrome_playmobil.png'), filename: 'syndrome_playmobil_photo.png', content_type: 'image/png')
-# syndrome_playmobil.wide_poster.attach(io: File.open('app/assets/images/syndrome_playmobil_wide.png'), filename: 'syndrome_playmobil_wide_photo.png', content_type: 'image/png')
+syndrome_playmobil.wide_poster.attach(io: File.open('app/assets/images/so_british_wide.png'), filename: 'so_british_wide_photo.png', content_type: 'image/png')
 syndrome_playmobil.save!
 
 

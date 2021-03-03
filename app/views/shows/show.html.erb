@@ -1,8 +1,15 @@
 <%= render 'shared/sliding_menu' %>
 
-<div class="show-poster">
+<div class="show-poster"  style="background-image: url('<%= cl_image_path @show.wide_poster.key %>')">
   <div class="show-description">
+    <div class="show-title">
+      <%= @show.name %>
+    </div>
+    <div class="show-description">
+      <%= @show.description %>
+    </div>
 
+    <button>Regarder</button>
   </div>
 </div>
 
@@ -11,6 +18,17 @@
     <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
   <% end %>
 </div>
+
+<%= @featured_shows.each do |show| %>
+  <div class="show-description">
+    <%= cl_image_tag show.thumbnail.key %>
+    <%= show.name %>
+    <%= show.description %>
+    <%= show.date %>
+    <%= show.time %>
+    <%= show.price %>
+  </div>
+<% end %>
 
 
 <%= render 'shared/footer' %>
