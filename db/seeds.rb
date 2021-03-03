@@ -9,8 +9,8 @@ Category.destroy_all
 
 #----------------------------------------------------
 puts "Seeding categories..."
-theater = Category.create!(name: "Theatre")
-concert = Category.create!(name: "Concert")
+theater = Category.create!(name: "Theâtre")
+concert = Category.create!(name: "Concerts")
 comedy = Category.create!(name: "Humour")
 
 

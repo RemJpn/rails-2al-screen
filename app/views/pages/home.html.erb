@@ -25,21 +25,14 @@
     <%= image_tag "featured_img_03.png", class: "featured-img", "data-featured" => "03" %>
   </div>
 
-  <% @categories.each do |category| %>
+  <% @categories.shuffle.each do |category| %>
     <% next if category.shows.empty? %>
     <div class="category-name">
       <%= category.name %>
     </div>
     <div class="category-shows">
       <% category.shows.first(5).each do |show|  %>
-        <div class="show-thumbnail" style="background-image: url('<%= cl_image_path show.thumbnail.key %>')">
-          <div class="thumbnail-hover">
-            <%= image_tag 'play.svg', class: "thumbnail-play" %>
-            <div class="thumbnail-title"><%= show.name %></div >
-            <div class="thumbnail-artist"><%= show.artist.name %></div>
-            <div class="thumbnail-style"><%= show.style %></div>
-          </div>
-        </div>
+        <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
       <% end %>
     </div>
   <% end %>

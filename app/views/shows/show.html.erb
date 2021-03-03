@@ -1,0 +1,16 @@
+<%= render 'shared/sliding_menu' %>
+
+<div class="show-poster">
+  <div class="show-description">
+
+  </div>
+</div>
+
+<div class="featured-shows">
+  <% @featured_shows.each do |show| %>
+    <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
+  <% end %>
+</div>
+
+
+<%= render 'shared/footer' %>
