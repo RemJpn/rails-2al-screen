@@ -25,30 +25,7 @@
   <div class="blank-100"></div>
 
   <% @featured_shows.each do |show| %>
-    <div class="card-featured">
-      <%= cl_image_tag show.thumbnail.key , class: "card-featured-thumbnail"%>
-      <div class="card-featured-details">
-        <div class="card-featured-artist">
-          <%= show.artist.name %>
-        </div>
-        <div class="card-featured-title">
-          <%= show.name %>
-        </div>
-        <div class="card-featured-description">
-          <%= show.description %>
-        </div>
-
-        <div class="card-featured-numbers">
-          <%= image_tag "calendar.svg" %>
-          <span><%= show.date.strftime("%d.%m.%Y") %></span>
-          <%= image_tag "clock.svg" %>
-          <span><%= show.time.strftime("%HH%M") %></span>
-          <%= image_tag "euro.svg" %>
-          <span><%= show.price.round %>€</span>
-        </div>
-      </div>
-      <button class="button-book">RESERVEZ</button>
-    </div>
+    <%= render partial: 'shared/card_featured_show', locals: { show: show } %>
   <% end %>
 </div>
 
