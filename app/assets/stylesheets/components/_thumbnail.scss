@@ -31,8 +31,9 @@
 
 .show-thumbnail {
   position: relative;
-  height: 310px;
-  width: 220px;
+  height: 0;
+  width: 86%;
+  padding-top: 121%; // size ration of 310px x 220px => 121% x 86%
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 15px 15px 15px;

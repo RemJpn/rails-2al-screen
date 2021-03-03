@@ -1,0 +1,13 @@
+<div class="shows-collection">
+  <div class="shows-collection-title">
+    <%= title %>
+  </div>
+  <div class="shows-collection-shows">
+    <% shows.each do |show|  %>
+      <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
+    <% end %>
+    <% if yellow_band %>
+      <div class="category-yellow-band"></div>
+    <% end %>
+  </div>
+</div>

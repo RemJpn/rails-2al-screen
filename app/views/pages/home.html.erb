@@ -27,16 +27,14 @@
 
   <% @categories.shuffle.each do |category| %>
     <% next if category.shows.empty? %>
-    <div class="category-name">
-      <%= category.name %>
-    </div>
-    <div class="category-shows">
-      <% category.shows.first(5).each do |show|  %>
-        <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
-      <% end %>
-    </div>
+    <%= render partial: 'shared/shows_collection',
+               locals: {
+                title: category.name,
+                shows: category.shows.first(5),
+                yellow_band: false
+               } %>
   <% end %>
-  <div class="category-name">Plus de catégories</div>
+  <div class="shows-collection-title ">Plus de catégories</div>
   <%= image_tag "plus.svg", class: "more-categories" %>
 </div>
 

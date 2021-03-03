@@ -1,0 +1,37 @@
+.shows-collection {
+  width: 100%;
+}
+
+.shows-collection-title {
+  font-size: 20px;
+  color: $red;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 44px 0 20px 0;
+}
+
+.shows-collection-shows {
+  position: relative;
+  display: flex;
+  flex-wrap:nowrap;
+  width: 100%;
+
+  a {
+    width: 100%;
+  }
+}
+
+.more-categories {
+  width: 15px;
+  margin-bottom: 40px;
+}
+
+.show-collection-yellow-band {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: rgba(255,197,41, 0.35);
+  top: 20%;
+  z-index: -1;
+}

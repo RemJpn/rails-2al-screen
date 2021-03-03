@@ -14,27 +14,41 @@
   </div>
 </div>
 
-<div class="featured-shows">
-  <div class="category-name">
-    À L’AFFICHE
-  </div>
-  <div class="category-shows">
-    <% @featured_shows.each do |show|  %>
-      <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
-    <% end %>
-  </div>
+<div class="home-container">
+  <%= render partial: 'shared/shows_collection',
+             locals: {
+              title: 'À L’AFFICHE',
+              shows: @featured_shows,
+              yellow_band: true
+             } %>
+
+  <%= @featured_shows.each do |show| %>
+    <div class="card-featured">
+      <%= cl_image_tag show.thumbnail.key , class: "card-featured-thumbnail"%>
+      <div class="card-featured-details">
+        <div class="card-featured-artist">
+          <%= show.artist.name %>
+        </div>
+        <div class="card-featured-title">
+          <%= show.name %>
+        </div>
+        <div class="card-featured-description">
+          <%= show.description %>
+        </div>
+
+        <div class="card-featured-numbers">
+          <%= image_tag "calendar.svg" %>
+          <%= show.date.strftime("%d.%m.%Y") %>
+          <%= image_tag "clock.svg" %>
+          <%= show.time.strftime("%HH%M") %>
+          <%= image_tag "euro.svg" %>
+          <%= show.price.round %>€
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
 
-<%= @featured_shows.each do |show| %>
-  <div class="show-description">
-    <%= cl_image_tag show.thumbnail.key %>
-    <%= show.name %>
-    <%= show.description %>
-    <%= show.date %>
-    <%= show.time %>
-    <%= show.price %>
-  </div>
-<% end %>
 
 
 <%= render 'shared/footer' %>
