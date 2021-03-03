@@ -27,7 +27,7 @@ armand = User.create!(
 #----------------------------------------------------
 puts "Seeding artists..."
 
-paul_taylor = Artist.create!(name: "Paul AYLOR")
+paul_taylor = Artist.create!(name: "Paul TAYLOR")
 issa_doumbia = Artist.create!(name: "Issa DOUMBIA")
 laura_laune = Artist.create!(name: "Laura LAUNE")
 elodie_poux = Artist.create!(name: "Elodie POUX")

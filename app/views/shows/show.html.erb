@@ -1,22 +1,28 @@
 <%= render 'shared/sliding_menu' %>
 
 <div class="show-poster"  style="background-image: url('<%= cl_image_path @show.wide_poster.key %>')">
-  <div class="show-description">
-    <div class="show-title">
+  <div class="show-info">
+    <h2 class="show-title">
+      <%= @show.artist.name.upcase %> <br>
       <%= @show.name %>
-    </div>
+    </h2>
     <div class="show-description">
       <%= @show.description %>
     </div>
 
-    <button>Regarder</button>
+    <button class="button-watch"><div class="arrow-right"></div>REGARDER</button>
   </div>
 </div>
 
 <div class="featured-shows">
-  <% @featured_shows.each do |show| %>
-    <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
-  <% end %>
+  <div class="category-name">
+    À L’AFFICHE
+  </div>
+  <div class="category-shows">
+    <% @featured_shows.each do |show|  %>
+      <%= render partial:'shared/show_thumbnail', locals: {show: show}  %>
+    <% end %>
+  </div>
 </div>
 
 <%= @featured_shows.each do |show| %>
