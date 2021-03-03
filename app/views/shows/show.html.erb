@@ -22,7 +22,9 @@
               yellow_band: true
              } %>
 
-  <%= @featured_shows.each do |show| %>
+  <div class="blank-100"></div>
+
+  <% @featured_shows.each do |show| %>
     <div class="card-featured">
       <%= cl_image_tag show.thumbnail.key , class: "card-featured-thumbnail"%>
       <div class="card-featured-details">
@@ -38,13 +40,14 @@
 
         <div class="card-featured-numbers">
           <%= image_tag "calendar.svg" %>
-          <%= show.date.strftime("%d.%m.%Y") %>
+          <span><%= show.date.strftime("%d.%m.%Y") %></span>
           <%= image_tag "clock.svg" %>
-          <%= show.time.strftime("%HH%M") %>
+          <span><%= show.time.strftime("%HH%M") %></span>
           <%= image_tag "euro.svg" %>
-          <%= show.price.round %>€
+          <span><%= show.price.round %>€</span>
         </div>
       </div>
+      <button class="button-book">RESERVEZ</button>
     </div>
   <% end %>
 </div>
