@@ -1,6 +1,6 @@
 .featured {
   display: flex;
-  margin: 50px 0 15px;
+  margin: 116px 0 15px;
 }
 
 .featured-left {
@@ -16,16 +16,18 @@
 }
 
 .featured-nav {
-  margin-top: 40px;
+  margin-top: 1rem;
 }
 
 .featured-description {
-  margin-top: 90px;
+  margin-top: 4rem;
   display: none;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .featured-item {
-  font-size: 17px;
+  font-size: 1.1rem;
   color: $red;
   font-weight: bold;
   border: none;
@@ -48,7 +50,7 @@
 .featured-discover {
   margin-top: 30px;
   margin-left: 10px;
-  font-size: 17px;
+  font-size: 1rem;
   color: $red;
   background-color: $yellow;
   font-weight: bold;

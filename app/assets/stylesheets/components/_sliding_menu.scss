@@ -64,7 +64,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    font-size: 75px;
+    font-size: 4rem;
     font-weight: bold;
     color: black;
   }
@@ -72,8 +72,9 @@
 
 
 .sliding-menu-options {
-  // display: flex;
-  padding: 40px 100px 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem 6rem;
   width: 100%;
 }
 
@@ -93,14 +94,15 @@
 }
 
 .sliding-menu-top {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: bold;
   text-align: end;
 }
 
 .sliding-menu-list {
-  font-size: 81px;
+  font-size: 4rem;
   font-weight: bold;
+  height: 100%;
 
   ul {
     list-style: none;
@@ -109,7 +111,7 @@
 }
 
 .sliding-menu-bottom {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
