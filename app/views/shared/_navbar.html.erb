@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-2al">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "logo.svg" %>
     <div style="color: <%= white_logo ? 'white' : 'black' %>" >SCREEN</div>
   <% end %>
@@ -11,7 +11,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <%= link_to "Accueil", "#", class: "nav-link" %>
+        <%= link_to "Accueil", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
         <%= link_to "Lives", "#", class: "nav-link" %>
