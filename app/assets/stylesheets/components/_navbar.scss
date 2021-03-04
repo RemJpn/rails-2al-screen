@@ -1,8 +1,15 @@
-.navbar-lewagon .navbar-collapse {
+.navbar-2al {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar-2al .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-2al .navbar-brand img {
   width: 40px;
   margin-right: 15px;
 }
