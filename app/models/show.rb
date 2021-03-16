@@ -5,4 +5,6 @@ class Show < ApplicationRecord
 
   has_one_attached :thumbnail
   has_one_attached :wide_poster
+
+  monetize :price_cents
 end

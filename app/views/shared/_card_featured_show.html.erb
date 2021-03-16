@@ -17,7 +17,7 @@
       <%= image_tag "clock.svg" %>
       <span><%= show.time.strftime("%HH%M") %></span>
       <%= image_tag "euro.svg" %>
-      <span><%= show.price.round %>€</span>
+      <span><%= humanized_money(show.price) %> €</span>
     </div>
   </div>
   <button class="button-book">RESERVEZ</button>
