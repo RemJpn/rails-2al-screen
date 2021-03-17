@@ -29,10 +29,12 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import initFeatured from '../components/featured';
 import initSlidingMenu from '../components/slidingmenu';
+import initBooking from '../components/booking';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initFeatured();
   initSlidingMenu();
+  initBooking();
 });

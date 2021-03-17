@@ -1,0 +1,46 @@
+<%= render partial: 'shared/navbar', locals: { white_logo: false }  %>
+
+
+<div class="booking-container container">
+  <div style="background-image: url('<%= cl_image_path @show.wide_poster.key %>')">
+
+  </div>
+  <div>
+    <div class="booking-details">
+      <div class="d-flex justify-content-between">
+        <div>
+          <div class="text-booking"><%= @show.artist.name.upcase %></div>
+          <div class="text-booking"><%= @show.name %></div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="btn-round incrementer" data-offset="-1">-</div>
+          <div id="tickets-counter" data-count="1">1</div>
+          <div class="btn-round incrementer" data-offset="+1">+</div>
+        </div>
+        <div class="d-flex align-items-center text-booking-price" id="unit-price" data-price-cents=<%= @show.price_cents %>>
+          <%= humanized_money(@show.price) %> €
+        </div>
+      </div>
+      <div class="d-flex text-booking-style">
+        <%= @show.category.name %>
+        <%= @show.style %>
+      </div>
+    </div>
+    <div class="booking-validation">
+      <div class="text-booking" id="booking-amount">MONTANT TOTAL : <%= humanized_money(@show.price) %> €</div>
+
+      <%= simple_form_for [@show, @booking] do |f| %>
+        <div class="d-none">
+          <%= f.input :nb_tickets, as: :hidden, input_html: { value: 1 } %>
+        </div>
+        <%= f.submit 'VALIDER', class: "btn-red" %>
+      <% end %>
+
+
+<!--       <form action="/shows/<%= @show.id %>/bookings" method="post">
+        <input type="hidden" value="1" disabled class="form-control" id="tickets-input" name="tickets">
+        <input type="submit" value="VALIDER" class="btn-red" id="submit">
+      </form> -->
+    </div>
+  </div>
+</div>
