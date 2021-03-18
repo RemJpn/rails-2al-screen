@@ -4,7 +4,7 @@ const updateCounter = (counter, count) => {
 };
 
 const updateInput = (ticketsCount) => {
-  const input = document.getElementById('booking_nb_tickets');
+  const input = document.getElementById('nb_tickets');
   input.value = ticketsCount;
 };
 

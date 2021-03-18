@@ -8,10 +8,12 @@ class BookingsController < ApplicationController
 
   def create
     @show = Show.find(params[:show_id])
-    @booking = Booking.new(booking_params)
-    @booking.show = @show
-    @booking.user = current_user
-    @booking.amount = @show.price * @booking.nb_tickets
+    @booking = Booking.new(
+      nb_tickets: params[:nb_tickets].to_i,
+      show: @show,
+      user: current_user,
+      amount: @show.price * params[:nb_tickets].to_i
+    )
 
     if @booking.save
       redirect_to booking_path(@booking)
@@ -23,9 +25,4 @@ class BookingsController < ApplicationController
   def show
   end
 
-  private
-
-  def booking_params
-    params.require(:booking).permit(:nb_tickets)
-  end
 end
