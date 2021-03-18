@@ -20,5 +20,7 @@
       <span><%= humanized_money(show.price) %> €</span>
     </div>
   </div>
-  <button class="button-book">RESERVEZ</button>
+  <%= link_to "RESERVEZ", new_show_booking_path(show), class: "button-book"%>
+
+  <!-- <button class="button-book">RESERVEZ</button> -->
 </div>

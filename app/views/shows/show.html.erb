@@ -10,7 +10,9 @@
       <%= @show.description %>
     </div>
 
-    <button class="button-watch"><div class="arrow-right"></div>REGARDER</button>
+    <%= link_to new_show_booking_path(@show), class: "button-watch"  do %>
+      <div class="arrow-right"></div>REGARDER
+    <% end %>
   </div>
 </div>
 

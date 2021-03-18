@@ -27,8 +27,9 @@
         <p>Nombre de places: <%= @booking.nb_tickets %></p>
         <p>Montant total: <strong><%= humanized_money @booking.amount %> €</strong></p>
       </div>
-
-      <button class="btn-red mb-5 mr-auto ml-auto">AJOUTER À MON CALENDRIER</button>
+      <% if @booking.state == 'paid' %>
+        <button class="btn-red mb-5 mr-auto ml-auto">AJOUTER À MON CALENDRIER</button>
+      <% end %>
     </div>
 
   </div>

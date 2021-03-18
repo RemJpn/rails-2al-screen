@@ -7,17 +7,21 @@
   </div>
   <div>
 
-    <div>
-      <div class="text-booking">RÉCAPITULATIF DE VOTRE COMMANDE</div>
-      <p>
-        Réservation de  <strong><%= @booking.nb_tickets %></strong>
-         places pour <strong><%= @booking.show.name %></strong>
-         de <strong><%= @booking.show.artist.name %></strong>,
-         le <strong><%= @booking.show.date.strftime("%d.%m.%Y") %></strong>
-          à <strong><%= @booking.show.time.strftime("%HH%M") %></strong>
-      </p>
-      <p>Montant total: <strong><%= humanized_money @booking.amount %> €</strong></p>
-      <button id="pay" class="btn-red align-self-center">PAYER</button>
+    <div class="d-flex flex-column">
+      <div class="text-booking mb-4">RÉCAPITULATIF DE VOTRE COMMANDE</div>
+
+      <div class="mb-5">
+        <p>
+          Réservation de  <strong><%= @booking.nb_tickets %></strong>
+           places pour <strong><%= @booking.show.name %></strong>
+           de <strong><%= @booking.show.artist.name %></strong>,
+           le <strong><%= @booking.show.date.strftime("%d.%m.%Y") %></strong>
+            à <strong><%= @booking.show.time.strftime("%HH%M") %></strong>
+        </p>
+        <p>Montant total: <strong><%= humanized_money @booking.amount %> €</strong></p>
+      </div>
+
+      <button id="pay" class="btn-red align-self-end">PAYER</button>
 
       <script src="https://js.stripe.com/v3/"></script>
       <script>

@@ -37,6 +37,18 @@
   display: flex;
   align-items: center;
   border-radius: 3px;
+  width: fit-content;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0, 1) 0s;
+
+  &:hover {
+    background-color: $yellow;
+    color: $red;
+  }
+
+  &:focus {
+    outline: 0;
+    transform: scale(1.05);
+  }
 }
 
 .arrow-right {
