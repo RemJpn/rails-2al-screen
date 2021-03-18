@@ -11,7 +11,7 @@
         <div class="d-flex">
           <div class="text-booking">COMMANDE #<%= @booking.id %> </div>
           <% if @booking.state == 'pending' %>
-            <p class="badge badge-warning align-self-center ml-3">Attente de paiement</p>
+            <p class="badge badge-secondary align-self-center ml-3">Attente de paiement</p>
           <% end %>
         </div>
         <p>Effectuée le <%= @booking.created_at.strftime("%d.%m.%Y") %></p>
