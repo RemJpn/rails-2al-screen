@@ -29,23 +29,11 @@
     <div class="booking-validation">
       <div class="text-booking" id="booking-amount">MONTANT TOTAL : <%= humanized_money(@show.price) %> €</div>
 
-      <%#= simple_form_for [@show, @booking] do |f| %>
-        <!-- <div class="d-none"> -->
-          <%#= f.input :nb_tickets, as: :hidden, input_html: { value: 1 } %>
-        <!-- </div> -->
-        <%#= f.submit 'VALIDER', class: "btn-red" %>
-      <%# end %>
-
       <%= form_tag show_bookings_path(@show) do %>
         <%= hidden_field_tag 'nb_tickets', 1 %>
         <%= submit_tag 'VALIDER', class: 'btn-red' %>
       <% end %>
 
-
-<!--       <form action="/shows/<%= @show.id %>/bookings" method="post">
-        <input type="hidden" value="1" disabled class="form-control" id="tickets-input" name="tickets">
-        <input type="submit" value="VALIDER" class="btn-red" id="submit">
-      </form> -->
     </div>
   </div>
 </div>
