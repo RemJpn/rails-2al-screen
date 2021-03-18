@@ -9,7 +9,7 @@ class BookingsController < ApplicationController
   def create
     @show = Show.find(params[:show_id])
     @booking = Booking.create!(
-      sku: @show.name,
+      sku: "#{@show.name} - #{@show.artist.name}",
       nb_tickets: params[:nb_tickets].to_i,
       show: @show,
       user: current_user,
@@ -27,10 +27,10 @@ class BookingsController < ApplicationController
        payment_method_types: ['card'],
        line_items: [{
          name: @booking.sku,
-         images: [@show.thumbnail],
+         images: [Cloudinary::Utils.cloudinary_url(@show.thumbnail.key)],
          amount: @booking.amount_cents,
          currency: 'eur',
-         quantity: 1
+         quantity: @booking.nb_tickets
        }],
        success_url: booking_url(@booking),
        cancel_url: booking_url(@booking)
