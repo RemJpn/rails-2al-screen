@@ -8,7 +8,12 @@
   <div>
     <div>
       <div class="mb-4">
-        <div class="text-booking">COMMANDE #<%= @booking.id %></div>
+        <div class="d-flex">
+          <div class="text-booking">COMMANDE #<%= @booking.id %> </div>
+          <% if @booking.state == 'pending' %>
+            <p class="badge badge-warning align-self-center ml-3">Attente de paiement</p>
+          <% end %>
+        </div>
         <p>Effectuée le <%= @booking.created_at.strftime("%d.%m.%Y") %></p>
       </div>
 
@@ -23,7 +28,7 @@
         <p>Montant total: <strong><%= humanized_money @booking.amount %> €</strong></p>
       </div>
 
-      <button class="btn-red mb-5 mr-auto ml-auto">AJOUTER UN RAPPEL À MON CALENDRIER</button>
+      <button class="btn-red mb-5 mr-auto ml-auto">AJOUTER À MON CALENDRIER</button>
     </div>
 
   </div>
