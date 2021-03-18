@@ -1,0 +1,30 @@
+<%= render partial: 'shared/navbar', locals: { white_logo: false }  %>
+
+
+<div class="booking-container container">
+  <div style="background-image: url('<%= cl_image_path @booking.show.wide_poster.key %>')">
+
+  </div>
+  <div>
+    <div>
+      <div class="mb-4">
+        <div class="text-booking">COMMANDE #<%= @booking.id %></div>
+        <p>Effectuée le <%= @booking.created_at.strftime("%d.%m.%Y") %></p>
+      </div>
+
+      <div class="mb-5">
+        <p><strong><%= @booking.show.artist.name.upcase %></strong></p>
+        <p><strong><%= @booking.show.name %></strong></p>
+        <p>
+          Le <strong><%= @booking.show.date.strftime("%d.%m.%Y") %></strong>
+            à <strong><%= @booking.show.time.strftime("%HH%M") %></strong>
+        </p>
+        <p>Nombre de places: <%= @booking.nb_tickets %></p>
+        <p>Montant total: <strong><%= humanized_money @booking.amount %> €</strong></p>
+      </div>
+
+      <button class="btn-red mb-5 mr-auto ml-auto">AJOUTER UN RAPPEL À MON CALENDRIER</button>
+    </div>
+
+  </div>
+</div>

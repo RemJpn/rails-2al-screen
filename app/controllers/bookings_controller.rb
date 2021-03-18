@@ -41,6 +41,6 @@ class BookingsController < ApplicationController
   end
 
   def show
+    @booking = current_user.bookings.find(params[:id])
   end
-
 end
