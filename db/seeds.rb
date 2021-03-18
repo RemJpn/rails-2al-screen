@@ -46,7 +46,7 @@ so_british = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "15/11/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Humour - StandUp"
 )
 so_british.category = comedy
@@ -61,7 +61,7 @@ prem_consultation = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "15/11/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Humour - StandUp"
 )
 prem_consultation.category = comedy
@@ -76,7 +76,7 @@ diable_gentille_fille = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "15/11/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Humour - StandUp"
 )
 diable_gentille_fille.category = comedy
@@ -91,7 +91,7 @@ ben = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "15/11/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Humour - StandUp"
 )
 ben.category = comedy
@@ -106,7 +106,7 @@ syndrome_playmobil = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "15/11/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Humour - StandUp"
 )
 syndrome_playmobil.category = comedy
@@ -123,7 +123,7 @@ andromaque = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Classique - Tragédie \n Tout Public"
 )
 andromaque.category = theater
@@ -138,7 +138,7 @@ theatre2 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Classique - Tragédie \n Tout Public"
 )
 theatre2.category = theater
@@ -153,7 +153,7 @@ theatre3 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Classique - Tragédie \n Tout Public"
 )
 theatre3.category = theater
@@ -168,7 +168,7 @@ theatre4 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Classique - Tragédie \n Tout Public"
 )
 theatre4.category = theater
@@ -183,7 +183,7 @@ theatre5 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Classique - Tragédie \n Tout Public"
 )
 theatre5.category = theater
@@ -200,7 +200,7 @@ concert1 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Post grunge"
 )
 concert1.category = concert
@@ -215,7 +215,7 @@ concert2 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Post grunge"
 )
 concert2.category = concert
@@ -230,7 +230,7 @@ concert3 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Post grunge"
 )
 concert3.category = concert
@@ -245,7 +245,7 @@ concert4 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Post grunge"
 )
 concert4.category = concert
@@ -260,7 +260,7 @@ concert5 = Show.new(
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros velit, vulputate at auctor vitae, ultrices vel lacus. Nunc aliquet felis eget ligula molestie, a eleifend nulla rutrum. Suspendisse justo ligula, aliquam at dapibus et, rutrum a odio. Curabitur quis justo ac lectus congue sagittis. Fusce nec porttitor felis. Vestibulum leo diam, dictum vel quam vitae, consectetur rhoncus sapien. Vestibulum vel tellus ullamcorper, rutrum arcu vel, pellentesque urna. Praesent eget maximus enim....",
   date: "20/10/2020",
   time: "20:00",
-  price: 8,
+  price_cents: 800,
   style: "Post grunge"
 )
 concert5.category = concert

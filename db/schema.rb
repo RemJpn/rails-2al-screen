@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_18_173525) do
+ActiveRecord::Schema.define(version: 2021_03_18_104815) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,11 +44,14 @@ ActiveRecord::Schema.define(version: 2021_02_18_173525) do
 
   create_table "bookings", force: :cascade do |t|
     t.integer "nb_tickets"
-    t.decimal "total_amount"
     t.bigint "user_id", null: false
     t.bigint "show_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "amount_cents", default: 0, null: false
+    t.string "sku"
+    t.string "state"
+    t.string "checkout_session_id"
     t.index ["show_id"], name: "index_bookings_on_show_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
@@ -64,12 +67,12 @@ ActiveRecord::Schema.define(version: 2021_02_18_173525) do
     t.text "description"
     t.date "date"
     t.time "time"
-    t.decimal "price"
     t.bigint "category_id", null: false
     t.bigint "artist_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "style"
+    t.integer "price_cents", default: 0, null: false
     t.index ["artist_id"], name: "index_shows_on_artist_id"
     t.index ["category_id"], name: "index_shows_on_category_id"
   end

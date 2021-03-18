@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  mount StripeEvent::Engine, at: '/stripe-webhooks'
+  #in test, needs ngrok http 3000
 
-  resources :shows, only: [:show]
-  resources :bookings, only: [:new]
+  root to: 'pages#home'
+
+  resources :shows, only: [:show] do
+    resources :bookings, only: [:new, :create]
+  end
+  resources :bookings, only: [:show] do
+    resources :payments, only: :new
+  end
+
 
 end
