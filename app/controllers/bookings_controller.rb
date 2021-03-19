@@ -13,7 +13,7 @@ class BookingsController < ApplicationController
       nb_tickets: params[:nb_tickets].to_i,
       show: @show,
       user: current_user,
-      amount: @show.price * params[:nb_tickets].to_i,
+      amount: @show.price,
       state: 'pending'
     )
 
