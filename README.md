@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+(Ongoing project) Web app for the French association LIVUBI. The purpose of LIVUBI is to propose live streaming of theatre, concerts, one man shows, that cannot be attended in person currently due to the ongoing pandemic.
