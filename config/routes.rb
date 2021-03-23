@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
   resources :bookings, only: [:show] do
     resources :payments, only: :new
+    resources :lives, only: [:index]
   end
 
 
