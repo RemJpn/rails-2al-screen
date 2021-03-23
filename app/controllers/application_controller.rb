@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
     end
 
     def store_user_location!
-      store_location_for(:user, request.fullpath)
+      store_location_for(:user, request.fullpath) if request.fullpath != '/users/sign_in'
     end
 end

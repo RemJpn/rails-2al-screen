@@ -1,4 +1,10 @@
 .user-form input {
   height: calc(1.5em + 1.5rem + 2px);
   border: 1px solid $red;
+
+  &:focus {
+    border-color: $yellow;
+    box-shadow: 0 0 0 0.2rem rgba(255, 197, 41, 0.25);
+  }
 }
+
