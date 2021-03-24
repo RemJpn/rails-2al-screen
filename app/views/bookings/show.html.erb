@@ -28,7 +28,7 @@
         <p>Montant total: <strong><%= humanized_money @booking.amount %> €</strong></p>
       </div>
       <% if @booking.state == 'paid' %>
-        <button class="btn-red mb-5 mr-auto ml-auto">AJOUTER À MON CALENDRIER</button>
+        <%= link_to "REGARDER", booking_lives_path(@booking), class: "btn-red mb-5" %>
       <% end %>
     </div>
 
