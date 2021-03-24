@@ -29,6 +29,10 @@
   right: 0;
 }
 
+.sliding-menu-hover {
+  right: calc(-100vw + 5px);
+}
+
 
 .sliding-menu-open {
   width: 83px;
@@ -85,8 +89,10 @@
   justify-content: center;
   cursor:pointer;
 
+  padding-right: 3rem;
+
   button {
-    transform: rotate(90deg);
+    // transform: rotate(90deg);
     font-size: 40px;
     border: none;
     background-color: inherit;
