@@ -1,10 +1,27 @@
 .user-form input {
-  height: calc(1.5em + 1.5rem + 2px);
-  border: 1px solid $red;
+  height: 2.2rem;
+  border: 2px solid #EA5451;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  background-color: #F9FDFF;
+  max-width: 250px;
 
   &:focus {
     border-color: $yellow;
     box-shadow: 0 0 0 0.2rem rgba(255, 197, 41, 0.25);
   }
 }
+
+
+
+// old version from initial mock-up
+// .user-form input {
+//   height: calc(1.5em + 1.5rem + 2px);
+//   border: 1px solid $red;
+
+//   &:focus {
+//     border-color: $yellow;
+//     box-shadow: 0 0 0 0.2rem rgba(255, 197, 41, 0.25);
+//   }
+// }
 

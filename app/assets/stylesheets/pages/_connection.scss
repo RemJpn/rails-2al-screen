@@ -1,0 +1,91 @@
+.connection-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.connection-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  border: 2px solid $red;
+  border-radius: 9px;
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), inset 0 3px 6px rgba(0, 0, 0, 0.16);
+
+  & > img {
+    height: 500px;
+  }
+}
+
+.connection-right {
+  padding: 2rem 3rem 0;
+  width: 100%;
+
+  span {
+    color: $red;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  img {
+    height: 120px;
+  }
+
+  label, p {
+    font-size: 0.875rem;
+  }
+
+  .link-yellow {
+    font-size: 0.75rem;
+    font-family: 'Poppins';
+  }
+}
+
+.link-yellow {
+  color: $yellow;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0, 1) 0s;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.button-pill {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  font-family: 'Poppins';
+  transition: color 0.4s cubic-bezier(0.4, 0, 0, 1) 0s, border-color 0.4s cubic-bezier(0.4, 0, 0, 1) 0s;
+}
+.button-pill-red {
+  border-color: $red;
+  color: $red;
+
+  &:hover {
+    border-color: $yellow;
+    color: $yellow;
+  }
+}
+.button-pill-yellow {
+  border-color: $yellow;
+  color: $yellow;
+
+  &:hover {
+    border-color: $red;
+    color: $red;
+  }
+}
+.button-pill-small {
+  font-size: 0.75rem;
+  padding: 0.35rem 1rem;
+}
+.button-pill-big {
+  font-size: 1rem;
+  padding: 0.625rem 1.5rem;
+}
