@@ -7,7 +7,6 @@ const toggleMenu = () => {
   slidingMenu.classList.remove('sliding-menu-hover');
 
   slidingMenu.addEventListener('transitionend', () => {
-    console.log('transitionend');
     const menuOpen = document.querySelector('.sliding-menu-open');
     menuOpen.addEventListener('mouseenter', hoverMenu);
   });
@@ -23,9 +22,7 @@ const hoverMenu = () => {
 }
 const unhoverMenu = () => {
   const slidingMenu = document.querySelector('.sliding-menu');
-  // if (!slidingMenu.classList.includes('sliding-menu-active')) {
-    slidingMenu.classList.remove('sliding-menu-hover');
-  // }
+  slidingMenu.classList.remove('sliding-menu-hover');
 }
 
 
