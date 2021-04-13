@@ -20,6 +20,7 @@ puts "Seeding users..."
 armand = User.create!(
   first_name: "Armand",
   last_name: "Duval",
+  username: "ArmandB",
   email: "armand.duval@test.com",
   password: "123456"
 )
