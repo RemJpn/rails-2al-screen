@@ -5,36 +5,39 @@
   <div class="connection-right">
     <div class="text-center">
       <h3>
-        Bienvenue dans <span>LIVUBI</span>
+        S'enregistrer sur <span>LIVUBI</span>
       </h3>
-      <%= image_tag "sign_in_character.png" %>
     </div>
 
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="form-inputs user-form">
+      <div class="form-inputs user-form mt-3">
         <%= f.input :email,
-                    required: false,
+                    required: true,
                     autofocus: true,
+                    label: "Identifiant",
+                    placeholder: "Identifiant de votre espace" %>
+        <%= f.input :email,
+                    required: true,
                     input_html: { autocomplete: "email" },
-                    label: "Identifiant" %>
+                    label: "Adresse email",
+                    placeholder: "Votre adresse email" %>
         <%= f.input :password,
-                    required: false,
-                    input_html: { autocomplete: "current-password" },
-                    label: "Mot de passe" %>
+                    required: true,
+                    input_html: { autocomplete: "new-password" },
+                    label: "Mot de passe",
+                    placeholder: "Mot de passe d'au moins #{@minimum_password_length} caractères" %>
+        <%= f.input :password_confirmation,
+                    required: true,
+                    input_html: { autocomplete: "new-password" },
+                    label: "Confirmer le mot de passe",
+                    placeholder: "Saisir de nouveau le mot de passe" %>
       </div>
 
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <%= f.button :submit, "LOGIN", class: "button-pill button-pill-red button-pill-big" %>
-        <%= link_to "mot de passe oublié?", new_password_path(resource_name), class: "link-yellow" %>
+      <div class="d-flex justify-content-end mt-4">
+        <%= f.button :submit, "INSCRIPTION", class: "button-pill button-pill-red button-pill-big" %>
 
       </div>
     <% end %>
 
-    <div class="text-center">
-      <p class="mb-2">
-        Vous n'avez pas encore de compte LIVUBI?
-      </p>
-      <%= link_to "OUVRIR UN COMPTE", new_registration_path(resource_name), class: "button-pill button-pill-yellow button-pill-small" %>
-    </div>
   </div>
 </div>
